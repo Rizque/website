@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jāņa Eglīša Preiļu Valsts ģimnāzija</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4094898ee2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="images/gim_logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fas fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">JAUNUMI</a></li>
+            <li><a href="about.html">PAR SKOLU</a></li>
+            <li><a href="course.html">SKOLOTĀJI</a></li>
+            <li><a href="contact.html">KONTAKTI</a></li>
+            <li><a href="canvas.html">CANVAS</a></li>
+          </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1>Jāņa Eglīša Preiļu Valsts ģimnāzija</h1>
+      </div>
+    </section>
+    <section class="facilities">
+      <h1>Janunumi</h1>
+      <div class="row">
+        <div class="facilities-col">
+          <a class="jaunumi" href="#"> <img src="images/sace1nsibas.jpg" /> </a>
+          <h3 style="text-align: center">
+            Panākumi Latgales reģiona skolēnu sporta spēlēs “Vidusskolu kauss”
+          </h3>
+          <p style="text-align: center">
+            17.maijā Rēzeknē notika Latgales reģiona skolēnu sporta spēles
+            ”VIDUSSKOLU KAUSS”. Ģimnāziju pārstāvēja Linda Indrikova, izcīnot 1.
+            vietu 100m un 400m distancēs. Savukārt Sofijai Dolgā tāllēkšanā
+            izcīnīja 3. vietu. Komandu kopvērtējumā izcīnīta godpilnā 3. vieta.
+            Paldies meitenēm un viņu trenerei Viktorijai Neištadtei!
+          </p>
+        </div>
+        <div class="facilities-col">
+          <a class="jaunumi" href="#"
+            ><img src="images/pedejais_zvans2.jpg"
+          /></a>
+
+          <h3 style="text-align: center">
+            Pēdējais zvans Jāņa Eglīša Preiļu Valsts ģimnāzijā
+          </h3>
+          <p style="text-align: center">
+            12.maijā ģimnāzijā valdīja īpaša rosība – notika koncerts ‘’Daudz
+            laimes, Latvija!’’ un Pēdējais zvans 9.un 12.klašu skolēniem. Maijs
+            ir īpašs mēnesis Latvijai, jo tiek svinēta mūsu valsts Neatkarības
+            atjaunošanas diena. Visu pagājušo nedēļu skolēni gan klases stundās,
+            gan arī pārējos mācību priekšmetos aktualizēja šo tēmu. Taču svētku
+            kulminācija bija projekta Latvijas Skolas somas sniegtā iespēja –
+            koncerts ‘’Daudz laimes, Latvija’’- , kurā uzstājās Grēta Grantiņa
+            un Justs Sirmais. Dziedātāji aizrāva skatītājus ar atraktīvo un
+            interesanto sniegumu.
+          </p>
+        </div>
+        <div class="facilities-col">
+          <a class="jaunumi" href="#"> <img src="images/meln1ava.jpg" /> </a>
+          <h3 style="text-align: center">
+            Izglītības iestāžu pašpārvalžu komandu mācības Malnavā
+          </h3>
+          <p style="text-align: center">
+            No 5. līdz 7. maijam Ģimnāzistu parlamenta pārstāvji Ieva Apšiniece,
+            Patrīcija Reščenko un Emīls Verčinskis, kā arī skolotāja Ingūna
+            Patmalniece piedalījās projekta ‘Kontakts’ apmācībās. Apmācības
+            notika Malnavas koledžā. Parlamenta pārstāvju galvenais uzdevums
+            bija iepazīties ar projekta būtību un uzrakstīt sava projekta
+            pieteikumu, kuru izvirzīs finansējuma konkursam. Jaunieši un
+            skolotāja trīs dienu garumā aktīvi iesaistījās neformālo mācību
+            procesā.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-youtube"></i>
+      </div>
+    </section>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

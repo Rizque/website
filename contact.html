@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontaktinformācija</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Ikonas -->
+    <script
+      src="https://kit.fontawesome.com/4094898ee2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/gim_logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fas fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">JAUNUMI</a></li>
+            <li><a href="about.html">PAR SKOLU</a></li>
+            <li><a href="course.html">SKOLOTĀJI</a></li>
+            <li><a href="contact.html">KONTAKTI</a></li>
+          </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Kontaktinformācija</h1>
+    </section>
+
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2213.8764240436026!2d26.722598051541304!3d56.29744595722618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46c27b6bab3935d9%3A0xe32b98644a4101af!2zSsSBxYZhIEVnbMSrxaFhIFByZWnEvHUgVmFsc3RzIMSjaW1uxIF6aWph!5e0!3m2!1sen!2slv!4v1652971481011!5m2!1sen!2slv"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              <h5>JĀŅA EGLĪŠA PREIĻU VALSTS ĢIMNĀZIJA</h5>
+              <p>Kooperatīvā iela 6, Preiļi, LV-5301</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              <h5>+371 27837790</h5>
+              <p>Tālrunis: 653 21663</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+              <h5>preilugim@pvg.edu.lv</h5>
+              <p>Reģiona numurs: 4219900382</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form action="form-handler.php" method="post">
+            <input type="text" name="name" placeholder="Vārds" required />
+            <input type="email" name="email" placeholder="E-pasts" required />
+            <input type="text" name="subject" placeholder="Temats" required />
+            <textarea
+              rows="8"
+              name="message"
+              placeholder="Ziņa"
+              required
+            ></textarea>
+            <button type="submit" class="hero-btn red-btn">Sūtīt</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-youtube"></i>
+      </div>
+    </section>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

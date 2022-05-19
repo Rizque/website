@@ -1,0 +1,32 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles_c.css" />
+    <title>Zīmēšana</title>
+  </head>
+  <body>
+    <section class="container">
+      <div id="toolbar">
+        <!-- <h1>Draw.</h1> -->
+        <label for="stroke">Krāsa</label>
+        <input id="stroke" name="stroke" type="color" />
+        <label for="lineWidth">Platums</label>
+        <input id="lineWidth" name="lineWidth" type="number" value="5" />
+        <label for="lineWidth">Kvadrātu skaits</label>
+        <input id="count" type="number" value="3" />
+        <label for="lineWidth">Kvadrātu lielums</label>
+        <input id="size" type="number" value="30" />
+
+        <button id="draw">Zīmēt</button>
+
+        <button id="clear">Izdzēst</button>
+      </div>
+      <div class="drawing-board">
+        <canvas id="drawing-board"></canvas>
+      </div>
+    </section>
+    <script src="canvas.js"></script>
+  </body>
+</html>

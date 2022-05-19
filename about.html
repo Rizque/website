@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Par skolu</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4094898ee2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/gim_logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fas fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">JAUNUMI</a></li>
+            <li><a href="about.html">PAR SKOLU</a></li>
+            <li><a href="course.html">SKOLOTĀJI</a></li>
+            <li><a href="contact.html">KONTAKTI</a></li>
+          </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Par skolu</h1>
+    </section>
+
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1 style="text-align: center">
+            Mūsu lepnums ir mūsu skolēni. Mūsu spēks ir mūsu skolotāji.
+          </h1>
+          <p>
+            1996. gada 26. martā Ministru kabinets Preiļu 1. vidusskolai piešķir
+            Valsts ģimnāzijas statusu. Preiļu Valsts ģimnāzija oficiāli darbu
+            uzsāk 1996. gada 2. septembrī.<br />
+            <br />
+            No 1996. gada līdz 2003. gada 25. jūnijam skolas direktors ir Jānis
+            Eglītis. Sakarā ar Jāņa Eglīša ievēlēšanu par Preiļu novada domes
+            priekšsēdētāju saskaņā ar 2003. gada 25. jūnija novada domes sēdes
+            lēmumu par Preiļu Valsts ģimnāzijas direktora vietas izpildītāju no
+            2003. gada 01. jūlija strādāja Ligita Pauniņa. 2016. gada 06.
+            oktobrī skolai mainīts nosaukums uz Jāņa Eglīša Preiļu Valsts
+            ģimnāzija.<br /><br />
+            Kopš 2005. gada 11. maija IZM saskaņojumu un 2005. gada 17. maija
+            Preiļu novada domes lēmumu Preiļu Valsts ģimnāzijas direktore ir
+            Ligita Pauniņa.<br /><br />
+            2020. gada rudenī JEPVĢ tika akreditēta līdz 2026. gada 1.
+            decembrim. <br />Izglītības programmas akreditētas līdz 2026. gada
+            1. decembrim. <br />2021./2022. m.g. ģimnāzijā mācās 167 audzēkņi un
+            strādā 27 skolotāji.
+          </p>
+        </div>
+        <div class="about-col">
+          <img src="images/par_skolu.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-youtube"></i>
+      </div>
+    </section>
+
+    <!-----Javascrip for Toggle Menu----->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
